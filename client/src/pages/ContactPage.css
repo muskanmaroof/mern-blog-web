@@ -1,0 +1,214 @@
+/* contact page */
+.contact-page{
+    display: flex;
+  }
+  .contact-side-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 2rem;
+    
+  }
+  .contact-side-info h3{
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 0;
+    font-weight: bolder;
+    text-align: center;
+  }
+  .contact-side-info h4{
+    color: #fff;
+    margin: 0;
+    text-align: center;
+  }
+  .contact-side-info{
+    background:linear-gradient(rgba(144, 12, 63, 0.3) , rgba(144, 12, 63, 0.3)) ,url(../Assets/contact-info.jpg);
+    max-width: 30%;
+    width: 100%;
+    
+  }
+  .section{
+    max-width: 70%;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    opacity: 1;
+  }
+  
+  .container{
+     max-width: 100%;
+    width: 100%;  
+  }
+  .section .container{
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+  .section-title{
+   text-align: center;
+   font-size: 2rem;
+    color: #581845;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  .padd-15{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+    /* margin-top: 30px; */
+  
+  }
+  .section-title h2{
+    margin: 0;
+  }
+  .contact-title{
+    /* margin-top: 35px; */
+    color: #581845;
+    text-align: center;
+    font-size: 25px;
+  
+    
+  }
+  .contact-sub-title{
+    color:#581845;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+  
+  }
+  
+  .contact .contact-info{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .contact .contact-info .icon{
+    display: inline-block;
+  }
+  .contact .contact-info .icon .fa{
+    font-size: 25px;
+    color: #581845;
+  }
+  .contact .contact-info h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: #581845;
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+  }
+  .contact .contact-info p{
+    font-size: 16px;
+    line-height: 25px;
+    color: #581845;
+    font-weight: 400;
+    text-align: center!important;
+  }
+  
+  .contact .contact-form{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .contact .contact-form .col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .contact .contact-form .col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .contact .contact-form .form-item .form-control{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: rgba(144, 12, 63, 0.7);
+    border: 1px solid #581845;
+    padding: 10px 25px;
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact .contact-form .form-item .form-control:focus{
+    box-shadow: 0 0 20px rgba(144, 12, 63, 0.7);
+  }
+  .contact .contact-form .form-item textarea.form-control{
+    height: 140px;
+  }
+  /* .contact .contact-form .btn{
+    height: 50px;
+    padding: 0  50px;
+  } */
+  
+  .contact .contact-form .form-item input::placeholder{
+    color: #fff;
+  
+  }
+  .contact .contact-form .form-item textarea::placeholder{
+    color: #fff;
+  }
+  
+  
+  
+  @media(max-width : 1199px){
+    .section .container{
+        padding-top: 70px;
+    }
+    
+   .section{
+     left: 0;
+   }
+   
+  }
+  
+  @media(max-width:991px){
+    .contact-page{
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-side-info{
+      padding: 30px ;
+      flex: 0 0 100%;
+      max-width: 100%;
+      width: 100%;
+      height: 200px;
+    }
+    .section{
+      flex: 0 0 100%;
+      max-width: 100%;
+      width: 100%;
+    }
+   .contact .contact-info{
+    margin: 0;
+   }
+   .contact .contact-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+  }
+  
+  @media(max-width:767px){
+    .contact .contact-form .col-6,
+    .contact .contact-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+  }
+  

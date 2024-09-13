@@ -1,0 +1,316 @@
+.about-container{
+    padding: 30px 60px;
+  }
+
+  .about-div{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #581845;
+  }
+  .about-div h1{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #581845;
+  }
+  .about-info{
+    margin-top: 20px;
+  }
+.about-info-main{
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+.about-info-main .author{
+    
+    max-width: 50%;
+    width: 100%;
+    
+}
+.about-info-main .author h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #581845;
+}
+
+.about-info-main .author p{
+    font-size: 1.2rem;
+    color: #581845;
+}
+.about-info-main .author-img{
+    position: relative;
+    width: 500px; /* Adjust the width */
+    height: 450px; /* Adjust the height */
+    background-color: #581845; /* Adjust the background color */
+    overflow-y: visible; 
+    clip-path: polygon(
+    50% 0%,        /* Top point */
+    100% 38%,      /* Top-right point */
+    82% 100%,      /* Bottom-right point */
+    18% 100%,      /* Bottom-left point */
+    0% 38%         /* Top-left point */
+  );
+}
+.about-info-main .author-img img{
+    width: 100%;
+    z-index: 4;
+    position: absolute;
+    bottom: 0;
+    height: 400px;
+   transition:  all .3s ease-in-out;
+   cursor: pointer;
+}
+.about-info-main .author-img:hover img{
+    transform: scale(1.2);
+}
+
+.about-info .about-quote{
+    background: url(../Assets/clouds.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-size: 1rem;
+    color: #581845;
+    padding: 100px 100px;
+    margin: 40px 0;
+}
+
+ .about-team{
+    color: #581845;
+}
+.about-team h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #581845;
+}
+.about-team p{
+    font-size: 1.2rem;
+    color: #581845;   
+}
+.about-team .team-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* background : url(../Assets/clouds.jpg); */
+  
+    border-radius: 15px;
+    padding: 30px 0;
+    margin: 0 150px;
+}
+.about-team .team-img img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+   transition: all .3s ease-in-out;
+}
+.about-team .team-img .img-one{
+    position: relative;
+    right: 25%
+}
+.about-team .team-img .img-two{
+    position: absolute;
+    left: 37%;
+}
+.about-team .team-img .img-three{
+    position: absolute;
+    left: 57%;
+    height: 526px;
+    bottom: 0;
+}
+
+.about-team .team-img:hover .item:not(:hover){
+    filter: grayscale(1) blur(10px);
+}
+
+
+/* Media query for screens less than 770px */
+@media (max-width: 769px) {
+    .about-container {
+      padding: 15px 20px;
+    }
+  
+    .about-div {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .about-div h1 {
+      font-size: 1.8rem; /* Adjust font size for smaller screens */
+    }
+  
+    .about-info-main {
+      flex-direction: column; /* Stack items vertically */
+      padding-right: 0; /* Remove right padding */
+    }
+  
+    .about-info-main .author {
+      max-width: 100%; /* Ensure full width */
+      width: 100%; /* Ensure full width */
+    }
+  
+    .about-info-main .author h2 {
+      font-size: 1.5rem; /* Adjust font size */
+    }
+  
+    .about-info-main .author p {
+      font-size: 1rem; /* Adjust font size */
+    }
+  
+    .about-info-main .author-img {
+      display: none; /* Optional: remove clip-path for better responsiveness */
+    }
+  
+    .about-info .about-quote {
+      background: url(../Assets/clouds.jpg) no-repeat center center;
+      background-size: cover;
+      text-align: center;
+      font-size: 0.9rem; /* Adjust font size */
+      color: #581845;
+      padding: 60px 20px; /* Adjust padding */
+      margin: 20px 0; /* Adjust margin */
+    }
+  
+    .about-team {
+      text-align: center; /* Center align text */
+    }
+  
+    .about-team h2 {
+      font-size: 1.6rem; /* Adjust font size */
+    }
+  
+    .about-team p {
+      font-size: 1rem; /* Adjust font size */
+    }
+  
+    .about-team .team-img {
+      flex-direction: column; /* Stack images vertically */
+      margin: 0 20px; /* Adjust margins */
+      padding: 20px 0; /* Adjust padding */
+    }
+  
+    .about-team .team-img img {
+      /* width: 100%;  */
+      height: auto; /* Adjust height */
+    }
+    .about-team .team-img .img-two{
+        position: absolute;
+        left: 35%;
+        height: 300px;
+        width: 300px;
+        /* bottom: 10px; */
+    }
+    .about-team .team-img .img-three{
+        position: absolute;
+        left: 57%;
+        height: 300px;
+        width: 300px;
+        bottom: 0;
+    }
+  }
+  @media (max-width: 560px) {
+    .about-team .team-img {
+       display: none;
+      }
+    
+  }
+  
+
+/* Tablet devices (portrait and landscape) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .about-container {
+      padding: 20px 40px;
+    }
+  
+    .about-div h1 {
+      font-size: 2.2rem;
+    }
+  
+    .about-info-main {
+      padding-right: 10px;
+      flex-direction: column;
+      display: flex;
+    }
+    .about-info-main .author{
+    
+        max-width: 100%;
+        width: 100%;
+        
+    }
+  
+    .about-info-main .author-img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .about-info-main .author-img img {
+      height: auto;
+    }
+  
+    .about-info .about-quote {
+      padding: 80px 40px;
+    }
+  
+    .about-team .team-img {
+      margin: 0 50px;
+    }
+  
+    .about-team .team-img img {
+      width: 400px;
+      height: 400px;
+    }
+    .about-team .team-img .img-two{
+        position: absolute;
+        left: 30%;
+    }
+    .about-team .team-img .img-three{
+        height: 450px;
+    }
+  }
+  
+  /* Desktop devices (large screens) */
+  @media (min-width: 1025px) {
+    .about-container {
+      padding: 30px 60px;
+    }
+  
+    .about-div h1 {
+      font-size: 2.6rem;
+    }
+  
+    .about-info-main {
+      padding-right: 20px;
+    }
+  
+    .about-info-main .author-img {
+      width: 500px;
+      height: 450px;
+    }
+  
+    .about-info-main .author-img img {
+      height: 400px;
+    }
+  
+    .about-info .about-quote {
+      padding: 100px 100px;
+    }
+  
+    .about-team .team-img {
+      margin: 0 150px;
+    }
+  
+    .about-team .team-img img {
+      width: 500px;
+      height: 500px;
+    }
+    .about-team .team-img .img-two{
+        position: absolute;
+        left: 25%;
+    }
+    .about-team .team-img .img-three{
+        height: 510px;
+    }
+  }
+
+  
